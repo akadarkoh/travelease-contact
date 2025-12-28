@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="floating-shapes">
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+
+    <div class="container">
+        <div class="form-wrapper">
+            <div class="header">
+                <h1>Get In Touch</h1>
+                <p>We'd love to hear from you</p>
+            </div>
+
+            <div id="successAlert" class="alert alert-success">
+                ✓ Thank you! Your message has been sent successfully. We'll get back to you soon.
+            </div>
+
+            <div id="errorAlert" class="alert alert-error">
+                ✗ Please check the required fields and try again.
+            </div>
+
+            <form id="contactForm">
+                <div class="form-grid">
+                    <div class="form-group full-width">
+                        <label for="fullName">Full Name *</label>
+                        <input type="text" id="fullName" name="fullName" placeholder="John Doe" required>
+                        <span class="error-message">Please enter your full name</span>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" placeholder="john.doe@example.com" required>
+                        <span class="error-message">Please enter a valid email address</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+1 (555) 123-4567">
+                        <span class="error-message">Please enter a valid phone number</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="company">Company Name</label>
+                        <input type="text" id="company" name="company" placeholder="Your Company">
+                        <span class="error-message">Please enter a valid company name</span>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="How can we help you?">
+                        <span class="error-message">Please enter a subject</span>
+                    </div>
+
+                    <!-- OPTIONAL: New Fields -->
+                    <div class="form-group">
+                        <label for="travelease_dates">Travel Dates</label>
+                        <input type="text" id="travelease_dates" name="travelease_dates" placeholder="e.g., March 15-20, 2024">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="budget">Budget Range</label>
+                        <select id="budget" name="budget">
+                            <option value="">Select budget</option>
+                            <option value="under_1000">Under $1,000</option>
+                            <option value="1000_5000">$1,000 - $5,000</option>
+                            <option value="over_5000">Over $5,000</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group full-width">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" placeholder="Tell us more about your inquiry..." required></textarea>
+                        <span class="error-message">Please enter your message</span>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
