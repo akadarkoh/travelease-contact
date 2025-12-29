@@ -13,3 +13,6 @@
 - SNS
 - Cloudwatch
 
+## Architecture
+#### The description below shows the workflow for the application
+<img width="818" height="630" alt="Screenshot 2025-12-29 at 7 27 45 AM" src="https://github.com/user-attachments/assets/0e8b2baa-3af5-4d6a-ac54-52557646ae0f" />
